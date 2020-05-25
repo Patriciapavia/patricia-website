@@ -102,8 +102,7 @@
  
  <% @items.each do |item|%> 
     <div class="item">
-           <div class="info-main">
-          <div class="info-bar-main">
+         
           <%= link_to item_path(item.id)do %>
           <%= image_tag item.image if item.image.attached?  %>  
           <% end %>
@@ -111,7 +110,7 @@
             <p><%= link_to item.title, item_path(item.id),  class: "primary-link" %> </p>
             <p><%= link_to number_to_currency(item.price), item_path(item.id), class: "primary-link price"%></p>
             
-         </div>
+         
         </div>
     </div>
 <% end %>
