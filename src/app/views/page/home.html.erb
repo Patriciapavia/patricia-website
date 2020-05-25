@@ -1,0 +1,137 @@
+ 
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Timmana&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+	<title>Greatdeal | home </title>
+</head>
+<body>
+  
+<section >
+ <div class="bgimg">
+   <div class="topleft">
+    <p><i class="fa fa-shopping-cart" style="font-size:48px;color:white"></i>Great deals<i class="fa fa-shopping-cart" style="font-size:48px;color:white"></i></p>
+    </div>
+    <div class="topright">
+    
+       <% if user_signed_in? %>
+       <p><i class="fa fa-fw fa-user" style="font-size:48px;color:white;"></i><%=link_to "Sign out", destroy_user_session_path, method: :delete, class:"topright-link"  %></p>
+          <%else %>
+          <p><i class="fa fa-fw fa-user" style="font-size:48px;color:white;"></i> <%= link_to "Sign in",new_user_session_path, class:"topright-link"%></p>
+     <% end %>
+
+  </div>
+  <div class="middle ">
+  
+  <h1>Sell online with great deal</h1>
+  
+    <hr>
+    <h3>Trusted by over 1,000,000 business worldwide</h3>
+  </div>
+  
+  <div class="middle-bottom">
+    <p><button type="button" class="btn btn-info btn-lg btn-block py-4 px-5"><%= link_to "Start now for free!",items_path, class:"bottomleft-link" %></button></p>
+  </div>
+  
+  </div>
+  </section
+
+  <section>
+
+  
+  <div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Beautiful themes that are responsive and customizable</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Start today for free!</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+     
+    </div>
+  </div>
+  
+    <div class="column">
+    <div class="card">
+      <h3>Trusted by over 1,000,000 businesses worldwide</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</p>
+      
+    </div>
+    </div>
+  </div>
+  </section>
+
+
+
+
+<footer>
+<div class="container">
+<div class="row-footer">
+   <div class="column-footer has-magin-top">
+  <h3>Get in Touch</h3>
+  <p>Don’t miss any updates of our new templates and extensions.!</p>
+  <input type="text" name="EMAIL" class="form-control memail" placeholder="Email">
+  <button class="btn btn_get btn_get_two" type="submit">Subscribe</button>
+   </div>
+   <div class="column-footer has-magin-top">
+   
+   
+   <h3 >Download</h3> <br>
+    <a href="#">Company</a> <br>
+    <a href="#">Android App</a> <br>
+     <a href="#">ios App</a> <br>
+    <a href="#">Desktop</a> <br>
+     <a href="#">Projects</a> <br>
+     <a href="#">My tasks</a> <br>
+    
+</div>
+<div class="column-footer has-magin-top">
+  
+    
+        <h3 >Help</h3>
+         <a href="#">FAQ</a> <br>
+         <a href="#">Term &amp; conditions</a> <br>
+          <a href="#">Reporting</a> <br>
+          <a href="#">Documentation</a> <br>
+         <a href="#">Support Policy</a> <br>
+         <a href="#">Privacy</a> <br>
+   
+  
+  </div>
+  <div class="column-footer has-magin-top">
+  <h3>Team Solutions</h3>
+  <div class="f_social_icon">
+  
+      <a href="#" class="fa fa-facebook"style="font-size:30px;color:"></a>
+      <a href="#" class="fa fa-twitter" style="font-size:30px;color:"></a>
+      <a href="#" class="fa fa-linkedin" style="font-size:30px;color:"></a>
+  </div>
+  </div>
+  <div >
+  <p class="copyright">Great deal All rights reserved.</p>
+   </div>
+</div>
+
+
+</footer>
+
+
+
+ 
+      
+
+                       
+                        
+          
+                        
+
+
+</body>
+</html>

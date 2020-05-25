@@ -1,0 +1,42 @@
+
+section {
+  padding: 6rem 0;
+}
+
+
+img{
+ width: 100%;
+ height: 100%;
+
+
+}
+
+.col-sm-6{
+ box-shadow: 10px 1px 10px lightgrey;
+ 
+ margin-right: 5rem;
+}
+.price{
+ color:#ff6500;
+}
+
+.cart{
+ 
+  color: white;
+
+}
+.text-area{
+	padding: 3rem 15rem 0 0;
+	box-shadow: 7px 1px 7px lightblue;
+}
+
+.sub{
+
+}
+
+
+
+.col{
+   box-shadow: 7px 1px 7px lightgrey;
+
+}

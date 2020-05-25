@@ -1,0 +1,158 @@
+/* section 1  */
+.bgimg {
+  background-image: url("/assets/online1.jpg");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  text-shadow: 2px 2px grey;
+  color: whitesmoke;
+  font-family: "Anton", sans-serif;
+  font-size: 2rem;
+  margin-top: -10rem;
+  font-weight: 900;
+}
+
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 16px;
+}
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 16px;
+}
+.topright-link {
+  color: whitesmoke;
+}
+
+.middle {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.middle h1 {
+  font-size: 5rem;
+  color: whitesmoke;
+}
+.middle h3 {
+  font-size: 3rem;
+  color: whitesmoke;
+}
+
+.middle-bottom {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.bottomleft-link {
+  color: white;
+}
+
+hr {
+  margin: auto;
+  width: 40%;
+}
+
+@media screen and (max-width: 768px) {
+  .middle h1 {
+    font-size: 3rem;
+  }
+  .middle h3 {
+    font-size: 2.5rem;
+  }
+}
+
+/* end section 1  */
+
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {
+  margin: 0 -5px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  color: #df8a76;
+}
+
+/* footer*/
+
+/* Create four equal columns that floats next to each other */
+.column-footer {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+.column-footer ul li {
+  list-style: none;
+}
+
+/* Clear floats after the columns */
+.row-footer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.has-magin-top,
+.has-magin-top a {
+  margin-top: 3rem;
+  color: #df8a76;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 10rem;
+  background-color: #faf0e6;
+}
+.copyright {
+  text-align: center;
+  color: #df8a76;
+}
+
+@media screen and (max-width: 768px) {
+  .column-footer {
+    width: 50%;
+    padding: 20px;
+  }
+}
+@media screen and (max-width: 667px) {
+  .column-footer {
+    width: 100%;
+    text-align: center;
+    list-style: none;
+  }
+}
