@@ -141,7 +141,7 @@ li a:hover:not(.active) {
   text-align: center;
 }
 
-.info {
+.info-main {
   padding: 10px;
   a {
     text-decoration: none;
@@ -149,7 +149,7 @@ li a:hover:not(.active) {
     font-size: 100px;
   }
 
-  .info-bar {
+  .info-bar-main {
     text-decoration: none;
     display: flex;
     justify-content: space-between;
